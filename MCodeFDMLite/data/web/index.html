@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Punhada</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="page-scoreboard">
+  <div class="dot" id="dot"></div>
+  <h1>Punhada</h1>
+  <div class="scoreboard">
+    <div class="team benfica">
+      <div class="badge"></div>
+      <div class="team-name">Benfica</div>
+      <div class="score" id="s1">0</div>
+    </div>
+    <div class="sep">–</div>
+    <div class="team sporting">
+      <div class="badge"></div>
+      <div class="team-name">Sporting</div>
+      <div class="score" id="s2">0</div>
+    </div>
+  </div>
+  <div class="status hidden" id="status"></div>
+  <div class="footer">
+    <button class="btn-reset" onclick="sendReset()">Reset</button>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

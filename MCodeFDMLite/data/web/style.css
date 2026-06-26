@@ -1,0 +1,74 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #0d0d1a;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.page-scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.page-scoreboard h1 {
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  color: #aaa;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.scoreboard { display: flex; justify-content: center; align-items: center; gap: 30px; width: 100%; }
+.team { display: flex; flex-direction: column; align-items: center; flex: 1; }
+
+.badge { width: 60px; height: 60px; border-radius: 50%; margin-bottom: 12px; }
+.benfica  .badge { background: #DA291C; }
+.sporting .badge { background: #006600; }
+
+.team-name { font-size: 1.1em; font-weight: bold; margin-bottom: 8px; }
+
+.score { font-size: 6em; font-weight: 900; line-height: 1; transition: transform 0.2s; }
+.score.bump { transform: scale(1.3); }
+.benfica  .score { color: #DA291C; }
+.sporting .score { color: #00a651; }
+
+.sep { font-size: 3em; color: #444; align-self: center; padding-top: 30px; }
+
+.status {
+  margin-top: 40px;
+  font-size: 1.6em;
+  font-weight: bold;
+  min-height: 2.5em;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+.status.negra  { color: #f39c12; }
+.status.winner { color: #f1c40f; font-size: 2em; }
+.status.hidden { opacity: 0; }
+
+.btn-reset {
+  margin-top: 20px;
+  padding: 12px 32px;
+  background: #333;
+  color: #aaa;
+  border: 1px solid #444;
+  border-radius: 8px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+.btn-reset:active { background: #555; }
+
+.footer { margin-top: 40px; }
+
+.dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: #e74c3c;
+  position: fixed;
+  top: 16px; right: 16px;
+}
+.dot.ok { background: #2ecc71; }
